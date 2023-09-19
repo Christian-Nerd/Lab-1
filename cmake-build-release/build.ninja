@@ -12,7 +12,7 @@
 
 # =============================================================================
 # Project: CS121_Lab1
-# Configurations: Debug
+# Configurations: Release
 # =============================================================================
 
 #############################################
@@ -24,7 +24,7 @@ ninja_required_version = 1.5
 #############################################
 # Set configuration variable for custom commands.
 
-CONFIGURATION = Debug
+CONFIGURATION = Release
 # =============================================================================
 # Include auxiliary files.
 
@@ -39,7 +39,7 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = /Users/treydavis/Library/CloudStorage/OneDrive-ErieCommunityCollege/Labs/CS121_Lab1/cmake-build-debug/
+cmake_ninja_workdir = /Users/treydavis/Library/CloudStorage/OneDrive-ErieCommunityCollege/Labs/CS121_Lab1/cmake-build-release/
 # =============================================================================
 # Object build statements for EXECUTABLE target CS121_Lab1
 
@@ -49,15 +49,15 @@ cmake_ninja_workdir = /Users/treydavis/Library/CloudStorage/OneDrive-ErieCommuni
 
 build cmake_object_order_depends_target_CS121_Lab1: phony || CMakeFiles/CS121_Lab1.dir
 
-build CMakeFiles/CS121_Lab1.dir/cs121driver1.cpp.o: CXX_COMPILER__CS121_Lab1_unscanned_Debug /Users/treydavis/Library/CloudStorage/OneDrive-ErieCommunityCollege/Labs/CS121_Lab1/cs121driver1.cpp || cmake_object_order_depends_target_CS121_Lab1
+build CMakeFiles/CS121_Lab1.dir/cs121driver1.cpp.o: CXX_COMPILER__CS121_Lab1_unscanned_Release /Users/treydavis/Library/CloudStorage/OneDrive-ErieCommunityCollege/Labs/CS121_Lab1/cs121driver1.cpp || cmake_object_order_depends_target_CS121_Lab1
   DEP_FILE = CMakeFiles/CS121_Lab1.dir/cs121driver1.cpp.o.d
-  FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/CS121_Lab1.dir
   OBJECT_FILE_DIR = CMakeFiles/CS121_Lab1.dir
 
-build CMakeFiles/CS121_Lab1.dir/cs121driver2.cpp.o: CXX_COMPILER__CS121_Lab1_unscanned_Debug /Users/treydavis/Library/CloudStorage/OneDrive-ErieCommunityCollege/Labs/CS121_Lab1/cs121driver2.cpp || cmake_object_order_depends_target_CS121_Lab1
+build CMakeFiles/CS121_Lab1.dir/cs121driver2.cpp.o: CXX_COMPILER__CS121_Lab1_unscanned_Release /Users/treydavis/Library/CloudStorage/OneDrive-ErieCommunityCollege/Labs/CS121_Lab1/cs121driver2.cpp || cmake_object_order_depends_target_CS121_Lab1
   DEP_FILE = CMakeFiles/CS121_Lab1.dir/cs121driver2.cpp.o.d
-  FLAGS = -g -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
+  FLAGS = -O3 -DNDEBUG -std=gnu++17 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk -fcolor-diagnostics
   OBJECT_DIR = CMakeFiles/CS121_Lab1.dir
   OBJECT_FILE_DIR = CMakeFiles/CS121_Lab1.dir
 
@@ -69,8 +69,8 @@ build CMakeFiles/CS121_Lab1.dir/cs121driver2.cpp.o: CXX_COMPILER__CS121_Lab1_uns
 #############################################
 # Link the executable CS121_Lab1
 
-build CS121_Lab1: CXX_EXECUTABLE_LINKER__CS121_Lab1_Debug CMakeFiles/CS121_Lab1.dir/cs121driver1.cpp.o CMakeFiles/CS121_Lab1.dir/cs121driver2.cpp.o
-  FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
+build CS121_Lab1: CXX_EXECUTABLE_LINKER__CS121_Lab1_Release CMakeFiles/CS121_Lab1.dir/cs121driver1.cpp.o CMakeFiles/CS121_Lab1.dir/cs121driver2.cpp.o
+  FLAGS = -O3 -DNDEBUG -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX13.3.sdk
   OBJECT_DIR = CMakeFiles/CS121_Lab1.dir
   POST_BUILD = :
   PRE_LINK = :
@@ -82,7 +82,7 @@ build CS121_Lab1: CXX_EXECUTABLE_LINKER__CS121_Lab1_Debug CMakeFiles/CS121_Lab1.
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/treydavis/Library/CloudStorage/OneDrive-ErieCommunityCollege/Labs/CS121_Lab1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+  COMMAND = cd /Users/treydavis/Library/CloudStorage/OneDrive-ErieCommunityCollege/Labs/CS121_Lab1/cmake-build-release && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -93,7 +93,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cd /Users/treydavis/Library/CloudStorage/OneDrive-ErieCommunityCollege/Labs/CS121_Lab1/cmake-build-debug && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/treydavis/Library/CloudStorage/OneDrive-ErieCommunityCollege/Labs/CS121_Lab1 -B/Users/treydavis/Library/CloudStorage/OneDrive-ErieCommunityCollege/Labs/CS121_Lab1/cmake-build-debug
+  COMMAND = cd /Users/treydavis/Library/CloudStorage/OneDrive-ErieCommunityCollege/Labs/CS121_Lab1/cmake-build-release && /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake --regenerate-during-build -S/Users/treydavis/Library/CloudStorage/OneDrive-ErieCommunityCollege/Labs/CS121_Lab1 -B/Users/treydavis/Library/CloudStorage/OneDrive-ErieCommunityCollege/Labs/CS121_Lab1/cmake-build-release
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -109,7 +109,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 
 #############################################
-# Folder: /Users/treydavis/Library/CloudStorage/OneDrive-ErieCommunityCollege/Labs/CS121_Lab1/cmake-build-debug
+# Folder: /Users/treydavis/Library/CloudStorage/OneDrive-ErieCommunityCollege/Labs/CS121_Lab1/cmake-build-release
 
 build all: phony CS121_Lab1
 
